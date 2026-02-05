@@ -1,57 +1,70 @@
+# 🔐 CyberSecurity Tools
 
+A collection of security assessment and research scripts for learning, testing, and defensive evaluation in controlled environments.
 
----
-
-## 🛡️ CyberSecurity-Tools
-
-A curated arsenal of 11 powerful cybersecurity utilities designed for penetration testers, ethical hackers, and digital defenders. Each tool targets a specific layer of the attack surface — from reconnaissance to exploitation — giving you tactical control over your security assessments.
+This repository focuses on understanding common attack techniques in order to improve system security and resilience.
 
 ---
 
-### 🔧 Tools Included
+## 📌 Purpose
 
-| Tool Name       | Functionality Description |
-|----------------|---------------------------|
-| **backdoor**    | Deploys covert access points for post-exploitation control. |
-| **dns enum**    | Enumerates DNS records to uncover subdomains and misconfigurations. |
-| **ftp cracker** | Brute-force FTP credentials using customizable wordlists. |
-| **info steal**  | Extracts sensitive system and user data for audit or analysis. |
-| **network scan**| Maps active hosts and services across a target network. |
-| **pass crack**  | Cracks password hashes using dictionary or hybrid attacks. |
-| **pdf crack**   | Unlocks password-protected PDF files via brute-force or dictionary methods. |
-| **pdf protect** | Encrypts and secures PDF documents with custom access controls. |
-| **port scan**   | Scans for open ports and identifies running services. |
-| **ssh botnet**  | Simulates SSH-based botnet behavior for research and defense testing. |
-| **ssh cracker** | Attempts SSH login brute-force attacks with stealth options. |
+This project is intended for:
+
+- Security students
+- Ethical hackers
+- Blue team / SOC learners
+- Penetration testing practice
+- Lab-based security research
+
+All tools are designed for educational and authorized testing only.
 
 ---
 
-### 🚀 Getting Started
+## 📂 Project Structure
+
+CyberSecurity-Tools/ ├── recon/ ├── scanning/ ├── password/ ├── exploitation/ ├── utilities/ └── docs/
+
+
+Each directory contains related scripts with usage instructions.
+
+---
+
+## 🛠 Tools Overview
+
+| Category | Tool | Description |
+|----------|------|-------------|
+| Recon | dns_enum | DNS and subdomain enumeration |
+| Scanning | network_scan | Network host and service discovery |
+| Scanning | port_scan | Open port identification |
+| Password | ftp_cracker | FTP authentication testing |
+| Password | ssh_cracker | SSH authentication testing |
+| Password | pass_crack | Hash cracking utility |
+| Utilities | pdf_crack | PDF password recovery |
+| Utilities | pdf_protect | PDF encryption |
+| Research | ssh_botnet_sim | Botnet behavior simulation |
+| Research | backdoor_lab | Backdoor analysis lab |
+| Research | info_steal_lab | Data leakage testing |
+
+---
+
+## ⚙️ Requirements
+
+- Linux (Recommended: Kali / Ubuntu)
+- Python 3.8+
+- Bash
+- Required Python packages:
 
 ```bash
-git clone git@github.com:Varun-1811/CyberSecurity-Tools.git
+pip install -r requirements.txt
+
+
+
+🚀 Installation
+
+git clone https://github.com/Varun-1811/CyberSecurity-Tools.git
 cd CyberSecurity-Tools
-```
 
-Each tool is self-contained and script-based. Most are written in Python or Bash. To run:
 
-```bash
-python toolname.py
-# or
-bash toolname.sh
-```
+▶️ Usage
 
----
-
-### ⚠️ Legal Disclaimer
-
-> This repository is intended **strictly for educational and ethical purposes**. Unauthorized use of these tools against systems without explicit permission is illegal and unethical. Use responsibly.
-
----
-
-### 🧠 Author
-
-Crafted by [Varun-1811](https://github.com/Varun-1811) — a digital tactician blending Scorpio mystique with cybersecurity precision.
-
----
-
+bash scanning/port_scan.sh 192.168.1.1
